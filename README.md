@@ -8,7 +8,7 @@
 Play the Game in your browser through this link https://akinolavictor.github.io/matchCardGame/
 
 ## playing Instructions
-* Click on card to know the card it covers.
+* Click on card to know the content it covers.
 * Keep showing cards and try as much as possible to see that you do not forget each card's position.
 * Each card has its own pair, so to have a match, you need two cards of the same content.
 
