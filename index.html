@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<html>
+<head>
+	<title>Memory Game </title>
+	<link rel="icon" href="img/favicon.png" sizes="16x16 32x32" type="image/png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="description" content="">
+	<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.sstatic.net/Js/stub.en.js?v=eacebfc819e7"></script>
+
+	
+</head>
+<body>
+	<div id="container">
+		<header>
+			<div class="headbar">
+				<span id="logo">Memory Game</span>
+				<span class="ltext">Are you retentive enough?</span>
+			</div>
+		</header>
+		
+		<aside>
+			<section class="controlR">
+				<div class="header"><span class="Htext">game settings</span></div>
+
+				<div class="restart">
+        			Reset Game  <br/><br/><i class="fa fa-repeat"> </i>
+        		</div>
+        	</section>
+
+			<section class="controlL">
+				<div class="header">
+				<span class="Htext">scores</span>
+				</div>
+				<div>
+					<span>Stars </span>
+					<ul class="stars">
+						<li><i class="fa fa-star"></i></li>
+				        <li><i class="fa fa-star"></i></li>
+				        <li><i class="fa fa-star"></i></li>
+	        		</ul>
+
+	        		<span class="moves">0</span> Move(s)
+
+	        		<div class="timer">
+	        		0 mins 0 secs
+
+	            	</div>
+          		</div>
+
+			</section>
+		</aside>
+
+		<div class="forPhones">
+			
+				<ul class="stars">
+					<li><i class="fa fa-star"></i></li>
+			        <li><i class="fa fa-star"></i></li>
+			        <li><i class="fa fa-star"></i></li>
+        		</ul>
+
+        		<span class="moves">0</span> Move(s)
+        		 &nbsp
+
+        		<div class="timer">
+					0 mins 0 secs
+            	</div>
+
+            	<div class="restart">
+            		&nbsp 
+        			<i class="fa fa-repeat"> </i>
+        		</div>
+		</div>
+				
+		<div class="cad">
+			
+			<ul class="allCards" >
+				
+			</ul>
+		</div>
+
+		<div class="final removed">
+			<span class="close">X</span>
+			
+					<h2>Congratulations 🎉</h2>
+				<div class="congrats">
+					 Congratulations you're a winner 🎉🎉
+				</div>
+
+				<div class="words">
+					    <p>You made <span id=finalMove> </span> moves </p>
+	                    <p>in <span id=totalTime> </span> </p>
+	                    <p>Star Rating:  <span id=starRating></span></p>
+				</div>
+				<button class="restart" id="now">
+					Play again 😄
+				</button>
+			
+			
+
+		</div>
+
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/apps.js"></script>
+</body>
+</html>

@@ -1,0 +1,486 @@
+ body{
+	background: #204020;
+}
+
+.headbar{
+	border: 5px solid white;
+	background: #9ba1b2;
+	width: 99.3%;
+	height: 100px;
+	margin: 0px 0px 10px 0px;
+
+}
+#logo{
+	text-transform: uppercase;
+	float: left;
+	font-size: 30px;
+	margin: 0px 0px 0px 0px;
+}
+.ltext{
+	text-transform: uppercase;
+	float: right;
+	margin:70px 10px 0px 0px;
+	vertical-align: bottom;
+	font-size: 15px;
+	position: relative;
+	top: 8px;
+}
+.controlL{
+	border: 5px solid white;
+	background: #9ba1b2;
+	height: 520px;
+	width: 20%;
+	float: left;
+
+}
+
+.controlR{
+	border: 5px solid white;
+	background: #9ba1b2;
+	height: 520px;
+	width: 20%;
+	float: right;
+
+}
+
+.header{
+	border: 0px solid red;
+	background: #204020;
+	height: 50px;
+	width: 100%;
+}
+
+.Htext{
+	color: white;
+	font-size: 20px;
+	text-transform: capitalize;
+	margin: 10px 0px 0px 0px;
+}
+
+aside{
+	text-align: center;
+}
+
+ul.allCards{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+li.card{
+	list-style: none;
+}
+
+.card{
+	border: 0px solid;
+	font-size: 0px;
+	background-color: #9ba1b2;
+	border-radius: 8px;
+	justify-content: center;
+	align-items: center;
+	color:white;
+	display: flex;
+
+	/*for the media query change the
+	 width and height of the cards so
+	 that it always remain a 4*4
+	 dimension for small phones and laptops
+	*/
+	
+	width:100px;
+	height:100px;
+	margin: 0px 30px 30px 0px;
+	cursor: pointer;
+	box-shadow: 5px 5px 20px 5px rgba(255, 236, 243, 0.15);
+}
+
+.stars{
+	display: flex;
+	margin: 5px 20px 5px -20px;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+
+
+
+.forPhones{
+	display: none;
+	list-style: none;
+	
+}
+
+.open{
+	
+	transform: rotateY(360deg);
+	background: #91bbe4;
+	cursor: default;
+	transition: 0.5s;
+}
+
+.fa-repeat{
+	cursor: pointer;
+}
+
+#starRating{
+	list-style: none;
+	display: flex;
+}
+
+.show{
+	font-size: 40px;
+	}
+
+.cad{
+	margin: 0px;
+}
+
+.match{
+	background-color: #b852ff;
+	animation-name: rubberBand;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+}
+
+.final{
+	border: 1px solid grey;
+	border-radius: 10px;
+	width:400px;
+	height:280px;
+	background: white;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top:40%;
+	left:35%;
+}
+
+#now{
+	border: 1px solid green;
+	border-radius: 4px;
+	color: white;
+	background: green;
+	width: auto;
+	height: 40px;
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.close{
+	float: right;
+	color: black;
+	font-size: 20px;
+	margin-right: 15px;
+	cursor: pointer;
+}
+.removed{
+	display: none;
+}
+
+
+@keyframes rubberBand {
+	from {transform: scale3d(1, 1, 1);}
+	30% {transform: scale3d(1.25, 0.75, 1);}
+	40% {transform: scale3d(0.75, 1.25, 1);}
+	50% {transform: scale3d(1.15, 0.85, 1);}
+	65% {transform: scale3d(.95, 1.05, 1);}
+	75% {transform: scale3d(1.05, .95, 1);}
+	to {transform: scale3d(1, 1, 1);}
+}
+
+.disable{
+	pointer-events: none;
+}
+
+
+.unmatch {
+  background: red;
+  animation: shake 0.5s;
+
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+/*media queries for small phones and tablets screens*/
+@media screen and (min-width: 0px) and (max-width: 770px){
+aside{
+	display:none;
+}
+
+.ltext{
+	margin:73px 10px 0px 0px;
+	font-size: 13px;
+}
+
+.forPhones{
+	display: flex;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+
+#logo{
+	text-transform: uppercase;
+	float: left;
+	font-size: 20px;
+	margin: 0px 0px 0px 0px;
+
+}
+
+
+
+
+.cad{
+	margin: 20px 0px 0px 0px;
+}	
+
+
+
+
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 377px){
+.ltext{
+	margin:50px 10px 0px 0px;
+	font-size: 13px;
+	}
+
+	
+}	
+
+
+@media screen and (min-width: 0px) and (max-width: 330px){
+.card{
+	width:35px;
+	height:35px;}
+
+.show{
+	font-size: 20px;
+	
+}	
+
+.final{
+	width:260px;
+	height:280px;
+	top:25%;
+	left:21%;
+}
+}	
+
+@media screen and (min-width: 331px) and (max-width: 351px){
+.card{
+	width:38px;
+	height:38px;}
+
+.show{
+	font-size: 20px;
+	
+}	
+
+.final{
+	width:260px;
+	height:280px;
+	top:25%;
+	left:21%;
+}
+}
+
+
+@media screen and (min-width: 352px) and (max-width: 420px){
+.card{
+	width:44px;
+	height:44px;}
+
+.show{
+	font-size: 25px;
+	
+}	
+
+.final{
+	width:260px;
+	height:280px;
+	top:25%;
+	left:21%;
+}
+}
+
+@media screen and (min-width: 421px) and (max-width: 500px){
+	.card{
+	width:59px;
+	height:59px;}
+
+.show{
+	font-size: 30px;
+}	
+
+.final{
+	width:270px;
+	height:280px;
+	top:25%;
+	left:21%;
+}
+}
+
+@media screen and (min-width: 501px) and (max-width: 580px){
+	.card{
+	width:75px;
+	height:75px;}
+
+.open{
+	font-size: 30px;
+}	
+
+.final{
+	width:270px;
+	height:280px;
+	top:25%;
+	left:24%;
+}
+}
+
+@media screen and (min-width: 581px) and (max-width: 660px){
+	.card{
+	width:90px;
+	height:90px;}
+
+.show{
+	font-size: 30px;
+	
+}
+
+.final{
+	width:320px;
+	height:280px;
+	top:25%;
+	left:21%;
+}
+}
+
+@media screen and (min-width: 661px) and (max-width: 754px){
+	.card{
+	width:110px;
+	height:110px;
+}
+
+.show{
+	font-size: 30px;
+	
+}
+
+.final{
+	width:370px;
+	height:280px;
+	top:25%;
+	left:21%;
+}
+}
+
+@media screen and (min-width: 755px) and (max-width: 770px){
+	.card{
+	width:115px;
+	height:115px;
+}
+
+.show{
+	font-size: 30px;
+	
+}
+
+.final{
+	width:370px;
+	height:280px;
+	top:27%;
+	left:21%;
+}
+}
+
+/*media queries for laptop screens*/
+@media screen and (min-width: 771px) and (max-width: 850px){
+	.card{
+	width:65px;
+	height:65px;
+}
+
+.show{
+	font-size: 30px;
+	
+}	
+
+.final{
+	width:270px;
+	height:280px;
+	top:27%;
+	left:35%;
+}
+}
+
+@media screen and (min-width: 851px) and (max-width: 990px){
+	.card{
+	width:75px;
+	height:75px;
+}
+
+.show{
+	font-size: 30px;
+	
+}
+
+.final{
+	width:400px;
+	height:280px;
+	top:30%;
+	left:27%;
+}	
+}
+
+@media screen and (min-width: 991px) and (max-width: 1100px){
+	.card{
+	width:92px;
+	height:92px;
+}
+
+.show{
+	font-size: 30px;
+	
+}	
+
+.final{
+	width:400px;
+	height:280px;
+	top:30%;
+	left:30%;
+}
+}
+
+@media screen and (min-width: 1216px){
+	.card{
+	width:130px;
+	height:130px;
+}
+
+.show{
+	font-size: 39px;
+	
+}
+	
+}
