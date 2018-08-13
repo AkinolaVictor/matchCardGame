@@ -20,5 +20,5 @@ Play the Game in your browser through this link https://akinolavictor.github.io/
 * I added CSS effects to the cards, to tell when the cards match and are unmatched.
 * I also made a pop-up message for when the player wins the game.
 
-## External library used (Dependies).
+## External library used (Dependency).
 * The bootstrap awesome font(with a link of https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css) is being used instead of external image files(which will slow down the loading of the page) to the content of each card in the deck.
