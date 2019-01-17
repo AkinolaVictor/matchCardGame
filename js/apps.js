@@ -229,12 +229,12 @@ function starRating(){
 
         }
         
-        else if       (moves>13 && moves <= 18){
+        else if       (moves>13 && moves <= 16){
                         starsContainer[i].innerHTML=
                         `<li><i class="fa fa-star"></i></li>
                         <li><i class="fa fa-star"></i></li>`;
     }
-        else if (moves>18 && moves <= 25){
+        else if (moves>16 && moves <= 20){
                         starsContainer[i].innerHTML=
                         `<li><i class="fa fa-star"></i></li>`;
         }else {
